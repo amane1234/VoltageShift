@@ -1,6 +1,5 @@
 # VoltageShift 
-Undervoltage Tools for MacOS (Haswell and Broadwell)<br />
-Change Turbo and Power Limit for most Intel platform Macbook
+Undervoltage Tools for MacOS (Haswell, Broadwell, and MSR 0xE2 unlocked intel devices)
 All source code protected by      The GNU General Public License V 3.0   <br />
 MSR Kext Driver modified from 
 [AnVMSR](http://www.insanelymac.com/forum/topic/291833-anvmsr-v10-tool-and-driver-to-read-from-or-write-to-cpu-msr-registers/)
@@ -8,9 +7,6 @@ by  Andy Vandijck Copyright (C) 2013 AnV Software
 
     NOTICE: THIS TOOL IS FOR ADVANCED USERS AND MAY DAMAGE YOUR COMPUTER PERMANENTLY.
     
-
-This App is not support Apple Silicon.
-
 Notes
 --------
 **You must build this yourself from the Xcode project**, or else it will not work on your system due to not being signed by your own certificate. Any issues opened because of invalid signing will be closed. I modified this in order to allow for SIP to remain enabled by creating your own binaries that are therefore signed.
