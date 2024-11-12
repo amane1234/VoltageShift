@@ -1,11 +1,5 @@
 # VoltageShift 
 Undervoltage Tools for MacOS (Haswell, Broadwell, and MSR 0xE2 unlocked intel devices)
-All source code protected by      The GNU General Public License V 3.0   <br />
-MSR Kext Driver modified from 
-[AnVMSR](http://www.insanelymac.com/forum/topic/291833-anvmsr-v10-tool-and-driver-to-read-from-or-write-to-cpu-msr-registers/)
-by  Andy Vandijck Copyright (C) 2013 AnV Software
-
-    NOTICE: THIS TOOL IS FOR ADVANCED USERS AND MAY DAMAGE YOUR COMPUTER PERMANENTLY.
     
 Notes
 --------
