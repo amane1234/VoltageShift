@@ -1,11 +1,11 @@
 # VoltageShift 
 Undervoltage Tools for MacOS (Haswell, Broadwell, and MSR 0xE2 unlocked intel devices)
     
-Notes
+Important notes
 --------
-**You must build this yourself from the Xcode project**, or else it will not work on your system due to not being signed by your own certificate. Any issues opened because of invalid signing will be closed. I modified this in order to allow for SIP to remain enabled by creating your own binaries that are therefore signed.
+To ensure this works properly on your system, you must build it yourself from the Xcode project. This is necessary because it will not function otherwise, as it hasn't been signed with your own certificate. Please note that any issues raised due to invalid signing will be closed.
 
-The version of VoltageShift contained in this repository is modified in order to account for VoltageShift.kext being loaded into your EFI folder and config.plist. **You must load the kext into your EFI for this version to work.**
+I’ve made modifications to allow SIP (System Integrity Protection) to remain enabled, by enabling you to create your own binaries, which will be properly signed during the build process.
 
 Building
 --------
@@ -25,7 +25,7 @@ xcodebuild  -target voltageshift
 Usage
 --------
 
-This program is a command tool that supports Haswell and above CPUs for undervoltage and TDP setting.
+This program is a command tool that supports Haswell and above CPUs for undervoltage and TDP setting. Make sure your CFG Lock is unlocked (MSR 0xE2 set 0).
 Apple locked the OC capability for newer devices or firmware, if the info show "OC_Locked" mean not able to undervolt, however, you can still disable Turbo and set Power Limit to reduce heat, fan noise or battery life.
 
 It uses the 'Intel Overclock Mailbox' for controling the voltage offset, 
